@@ -1,136 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roman Pruitt | Music</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    box-sizing: border-box;
-}
+  <title>Roman Pruitt | Music</title>
 
-body {
-    margin: 0;
-    background: #080808;
-    color: white;
-    font-family: Arial, sans-serif;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    background:
-        radial-gradient(circle at center, #292929 0%, #080808 55%);
-}
+    body {
+      background: #050505;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-h1 {
-    font-size: clamp(55px, 12vw, 120px);
-    margin: 0;
-    letter-spacing: -5px;
-}
+    header {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top, #292929 0%, #050505 55%);
+    }
 
-.subtitle {
-    color: #aaa;
-    font-size: 20px;
-    margin-top: 15px;
-}
+    header h1 {
+      font-size: clamp(50px, 12vw, 110px);
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
 
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 28px;
-    background: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-}
+    header p {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #aaa;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
 
-section {
-    max-width: 900px;
-    margin: auto;
-    padding: 70px 25px;
-}
+    .youtube {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 15px 28px;
+      background: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
 
-h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
+    .youtube:hover {
+      transform: scale(1.05);
+      background: #cc0000;
+    }
 
-.card {
-    background: #151515;
-    border: 1px solid #292929;
-    border-radius: 18px;
-    padding: 25px;
-    margin-bottom: 20px;
-}
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 20px;
+    }
 
-.card h3 {
-    margin-top: 0;
-    font-size: 25px;
-}
+    .section-title {
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 50px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
 
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-    border-top: 1px solid #222;
-}
-</style>
+    .album {
+      background: #111;
+      border: 1px solid #292929;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 35px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    .album h3 {
+      font-size: 32px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    .album .date {
+      color: #999;
+      margin-bottom: 25px;
+    }
+
+    .album p {
+      color: #ccc;
+      line-height: 1.7;
+    }
+
+    .snake-art {
+      width: 100%;
+      max-width: 650px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 8px;
+    }
+
+    .coming {
+      color: #ff3b3b;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .snake-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+
+    .snake-button:hover {
+      background: white;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      border-top: 1px solid #222;
+      color: #666;
+    }
+
+    footer strong {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
     <h1>ROMAN PRUITT</h1>
-    <div class="subtitle">MUSIC • VIDEOS • EVERYTHING ELSE</div>
 
-    <a class="button" href="#music">LISTEN TO MY MUSIC</a>
-</header>
+    <p>Music • YouTube • More Coming Soon</p>
 
-<section id="music">
-    <h2>🎵 MUSIC</h2>
+    <a
+      class="youtube"
+      href="https://youtube.com/@romanpruittyt"
+      target="_blank"
+    >
+      ▶ WATCH MY YOUTUBE
+    </a>
+  </header>
 
-    <div class="card">
-        <h3>My Music</h3>
-        <p>New songs coming soon.</p>
+
+  <section>
+
+    <h2 class="section-title">Music</h2>
+
+
+    <!-- PRAGMATIC -->
+
+    <div class="album">
+
+      <div class="coming">
+        COMING NOVEMBER
+      </div>
+
+      <h3>PRAGMATIC</h3>
+
+      <p class="date">
+        NEW ALBUM • NOVEMBER
+      </p>
+
+      <p>
+        A new Roman Pruitt album is coming this November.
+        More information, music, and updates will be posted here.
+      </p>
+
     </div>
-</section>
 
-<section>
-    <h2>📺 VIDEOS</h2>
 
-    <div class="card">
-        <h3>My YouTube Channel</h3>
-        <p>Check out my latest videos.</p>
+    <!-- SNAKE -->
 
-        <a class="button" href="https://www.youtube.com/" target="_blank">
-            YOUTUBE
-        </a>
+    <div class="album">
+
+      <div class="coming">
+        UPCOMING SONG
+      </div>
+
+      <h3>SNAKE</h3>
+
+      <p class="date">
+        NEW SONG • COMING SOON
+      </p>
+
+      <img
+        class="snake-art"
+        src="snake.jpg"
+        alt="Snake artwork by Roman Pruitt"
+      >
+
+      <p>
+        SNAKE is an upcoming song by Roman Pruitt.
+      </p>
+
     </div>
-</section>
 
-<section>
-    <h2>🖤 ABOUT</h2>
+  </section>
 
-    <div class="card">
-        <p>
-            Welcome to the official Roman Pruitt website.
-            This is where I'll share my music, videos,
-            projects and whatever I'm working on.
-        </p>
+
+  <section>
+
+    <h2 class="section-title">YouTube</h2>
+
+    <div class="album">
+
+      <h3>ROMAN PRUITT</h3>
+
+      <p>
+        Music, videos, projects and more.
+      </p>
+
+      <a
+        class="snake-button"
+        href="https://youtube.com/@romanpruittyt"
+        target="_blank"
+      >
+        VISIT MY CHANNEL →
+      </a>
+
     </div>
-</section>
 
-<footer>
-    © 2026 Roman Pruitt
-</footer>
+  </section>
+
+
+  <footer>
+    <p>
+      © 2026 <strong>Roman Pruitt</strong>
+    </p>
+
+    <p style="margin-top:10px;">
+      Official website
+    </p>
+  </footer>
 
 </body>
 </html>
